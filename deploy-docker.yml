@@ -1,6 +1,7 @@
 ---
 - hosts: dev
   become: True
+  become_root: yes
   tasks:
     - name: Install python pip
       apt:
