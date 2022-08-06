@@ -4,11 +4,11 @@
   become_root: yes
   tasks:
     - name: Install python pip
-      apt:
+      yum:
         name: python-pip
         state: present
     - name: Install docker
-      apt:
+      yum:
         name: docker
         state: present
     - name: start docker
